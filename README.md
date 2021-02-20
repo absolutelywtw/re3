@@ -1,12 +1,9 @@
 # Take Two, all of their employees, and anyone who supports them can go fuck themselves :). Sincerely, Starman. 
 
 # re3
-[![Build status](https://ci.appveyor.com/api/projects/status/hyiwgegks122h8jg/branch/master?svg=true)](https://ci.appveyor.com/project/aap/re3/branch/master)
-<a href="https://discord.gg/jYpXxTm"><img src="https://img.shields.io/badge/discord-join-7289DA.svg?logo=discord&longCache=true&style=flat" /></a>
-| Platform | Debug | Release |
-|------------------|-------------|-------------|
-| Windows Direct3D9 | [![Download](https://api.bintray.com/packages/gtamodding/re3/Debug_win-x86-librw_d3d9-mss/images/download.svg)](https://bintray.com/gtamodding/re3/Debug_win-x86-librw_d3d9-mss/_latestVersion) | [![Download](https://api.bintray.com/packages/gtamodding/re3/Release_win-x86-librw_d3d9-mss/images/download.svg)](https://bintray.com/gtamodding/re3/Release_win-x86-librw_d3d9-mss/_latestVersion) |
-| Windows OpenGL3.3 | [![Download](https://api.bintray.com/packages/gtamodding/re3/Debug_win-x86-librw_gl3_glfw-mss/images/download.svg)](https://bintray.com/gtamodding/re3/Debug_win-x86-librw_gl3_glfw-mss/_latestVersion) | [![Download](https://api.bintray.com/packages/gtamodding/re3/Release_win-x86-librw_gl3_glfw-mss/images/download.svg)](https://bintray.com/gtamodding/re3/Release_win-x86-librw_gl3_glfw-mss/_latestVersion) |
+
+All credits go to GTA modding scene. Follow [GTA Forums](https://gtaforums.com/topic/968655-gta-iii-and-vice-city-fully-reverse-engineered/) for progress.
+I will not provide builds. Just follow the instructions carefully and you'll be fine.
 
 ## Intro
 
@@ -25,8 +22,8 @@ such that we have a working game at all times.
 
 You may want to point GTA_III_RE_DIR environment variable to GTA3 root folder if you want executable to be moved there via post-build script.
 
-- For Linux, proceed: [Building on Linux](https://github.com/GTAmodding/re3/wiki/Building-on-Linux)
-- For FreeBSD, proceed: [Building on FreeBSD](https://github.com/GTAmodding/re3/wiki/Building-on-FreeBSD) 
+- For Linux, proceed: [Building on Linux](https://web.archive.org/web/20210217192751/https://github.com/GTAmodding/re3/wiki/Building-on-Linux)
+- For FreeBSD, proceed: [Building on FreeBSD](https://web.archive.org/web/20210217192740/https://github.com/GTAmodding/re3/wiki/Building-on-FreeBSD) 
 - For Windows, assuming you have Visual Studio:
     - Clone the repo using the argument `--recursive`.
     - Run one of the `premake-vsXXXX.cmd` variants on root folder.
@@ -34,14 +31,14 @@ You may want to point GTA_III_RE_DIR environment variable to GTA3 root folder if
     
 **If you use 64-bit D3D9**: We don't ship 64-bit Dx9 SDK. You need to download it from Microsoft if you don't have it(although it should come pre-installed after some Windows version)  
 
-There are various settings at the very bottom of [config.h](https://github.com/GTAmodding/re3/tree/master/src/core/config.h), you may want to take a look there. i.e. FIX_BUGS define fixes the bugs we've come across.
+There are various settings at the very bottom of [config.h](https://web.archive.org/web/20210214105139/https://github.com/GTAmodding/re3/tree/master/src/core/config.h), you may want to take a look there. i.e. FIX_BUGS define fixes the bugs we've come across.
 
-> :information_source: **If you choose OpenAL on Windows** You must read [Running OpenAL build on Windows](https://github.com/GTAmodding/re3/wiki/Running-OpenAL-build-on-Windows).
+> :information_source: **If you choose OpenAL on Windows** You must read [Running OpenAL build on Windows](https://web.archive.org/web/20210217192855/https://github.com/GTAmodding/re3/wiki/Running-OpenAL-build-on-Windows).
 
 > :information_source: **Did you notice librw?** re3 uses completely homebrew RenderWare-replacement rendering engine; [librw](https://github.com/aap/librw/). librw comes as submodule of re3, but you also can use LIBRW enviorenment variable to specify path to your own librw.
 
 ## Contributing
-Please read the [Coding Style](https://github.com/GTAmodding/re3/blob/master/CODING_STYLE.md) Document
+Please read the [Coding Style](https://web.archive.org/web/20210214104959/https://github.com/GTAmodding/re3/blob/master/CODING_STYLE.md) Document
 
 ### Unreversed / incomplete classes (at least the ones we know)
 The following classes have only unused or practically unused code left:
